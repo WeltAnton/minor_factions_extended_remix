@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+	<add sel="/language">
+		<page id="6920243" voice="no">
+			<t id="1">Heavy Frigate Plunderer</t>
+			<t id="2">Heavy Destroyer Plunderer</t>
+			<t id="3">XL Plunderer</t>
+			<t id="4">Pirate Carrier</t>
+			<!-- <t id="5">Pirate Carrier</t> -->
+			<!-- <t id="6">Heavy Frigate Patrol</t>	 -->
+		</page>
+	</add>
+</diff>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+  <replace sel="/factions/faction[@id='teladi'][@name='{20203,601}']/licences/licence[@factions='ministry'][@type='capitalship']/@factions">ministry scaleplate</replace>
+  <replace sel="/factions/faction[@id='teladi'][@name='{20203,601}']/licences/licence[@factions='ministry'][@type='militaryship']/@factions">ministry scaleplate</replace>
+
+  <replace sel="/factions/faction[@id='alliance'][@name='{20203,801}']/licences/licence[@factions='hatikvah']/@factions">hatikvah scaleplate paranid trinity</replace>
+  <replace sel="/factions/faction[@id='hatikvah'][@name='{20203,901}']/licences/licence[@factions='antigone argon buccaneers holyorder ministry paranid scaleplate teladi trinity']/@factions">antigone argon buccaneers holyorder ministry paranid scaleplate teladi trinity alliance</replace>
+  <add sel="/factions/faction[@id='hatikvah'][@name='{20203,901}']/licences/licence[@factions='scaleplate']" pos="before">
+    <licence type="militaryequipment" factions="scaleplate"/>
+  </add>
+  <add sel="/factions/faction[@id='hatikvah'][@name='{20203,901}']/licences/licence[@factions='scaleplate'][@type='station_gen_basic']" pos="before">
+    <licence type="capitalship" factions="scaleplate"/>
+  </add>
+  <add sel="/factions/faction[@id='hatikvah'][@name='{20203,901}']/licences/licence[@factions='scaleplate'][@type='station_gen_basic']" pos="before">
+    <licence type="militaryship" factions="scaleplate"/>
+  </add>
+  <replace sel="/factions/faction[@id='scaleplate'][@name='{20203,1001}']/licences/licence[@factions='boron'][@type='generaluseship']/@factions">boron teladi hatikvah alliance</replace>
+</diff>

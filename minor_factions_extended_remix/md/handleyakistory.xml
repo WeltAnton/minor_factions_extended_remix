@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<mdscript name="MFEHandleYakiStory" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+		<cue name="Root">
+			<cues>
+				<!-- Deactivate Yaki Jobs -->
+				<cue name="MFE_DeactivateYakiJobs">
+					<conditions>
+						<event_cue_cancelled cue="Setup_Yaki_Leader"/>
+					</conditions>
+					<actions>
+						<set_job_active job="'mfe_yaki_blockaderunner_smuggler_m'" activate="false"/>
+						<set_job_active job="'mfe_yaki_scout_s'" activate="false"/>
+						<set_job_active job="'mfe_yaki_raider_l'" activate="false"/>
+					</actions>
+				</cue>
+				
+				<!-- Make player and xenon hostile -->
+				<cue name="MFE_YakiStartChangeRelations">
+					<conditions>
+						<event_cue_signalled cue="md.Story_Yaki.Ch22_C_1_Player_Attacked_Station" />
+					</conditions>
+					<actions>
+						<set_faction_relation faction="faction.xenon" otherfaction="faction.player" value="faction.player.relation.kill.max"/>
+						<set_faction_relation faction="faction.player" otherfaction="faction.xenon" value="faction.xenon.relation.kill.max"/>
+					</actions>
+				</cue>
+			</cues>
+		</cue>
+	</cues>
+</mdscript>

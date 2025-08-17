@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="minor_factions_extended_remix" name="minor_factions_extended_remix" description="rewrite of minor_factions_extended from Bhorton22" author="Komine" version="100" date="2024-05-30" lastupdate="">
+  <dependency id="ego_dlc_terran" name="Cradle of Humanity"/>
+	<dependency id="ws_2971583324" optional="true" name="Farnham's Legend Revision"/>	
+	<dependency id="ws_2994967612" optional="true" name="yaki_evolution"/>		
+</content>

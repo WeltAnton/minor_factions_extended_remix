@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<mdscript name="MFEGiveSCALicences" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+		<cue name="Root">
+			<cues>
+				<cue name="MFE_GiveSCALicences">
+					<conditions>
+						<check_any>
+							<event_cue_signalled cue="md.Setup.GameStart" />
+							<event_player_created/>
+						</check_any>
+					</conditions>
+					<delay exact="1s"/>
+					<actions>
+						<add_licence faction="faction.player" licencefaction="faction.scaleplate" type="militaryequipment"/>
+						<add_licence faction="faction.player" licencefaction="faction.scaleplate" type="militaryship"/>
+						<add_licence faction="faction.player" licencefaction="faction.scaleplate" type="capitalequipment"/>
+						<add_licence faction="faction.player" licencefaction="faction.scaleplate" type="capitalship"/>
+					</actions>
+				</cue>
+			</cues>
+		</cue>
+	</cues>
+</mdscript>

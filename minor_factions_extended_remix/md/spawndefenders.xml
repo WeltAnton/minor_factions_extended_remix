@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<mdscript name="MFESpawnDefenders" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+		<cue name="Root">
+			<cues>
+				<!-- Spawn SCA Patrols, not replaced  -->
+				<cue name="MFE_Spawn_SCAPatrols">
+					<conditions>
+						<check_any>
+							<event_cue_signalled cue="md.Setup.GameStart" />
+							<event_player_created/>
+						</check_any>
+					</conditions>
+					<delay exact="1s"/>
+					<actions>
+						<find_sector name="$mfe_hewastwin" macro="macro.cluster_42_sector002_macro"/>
+						<do_if value="$mfe_hewastwin.exists">
+							<generate_loadout
+								macro="macro.skiron_macro" faction="faction.scaleplate"
+								wares="[ware.software_flightassistmk1, ware.software_dockmk2, ware.software_scannerlongrangemk1, ware.software_scannerobjectmk1, ware.software_targetmk1, ware.engine_arg_l_travel_01_mk1, ware.shield_arg_l_standard_01_mk1, ware.turret_arg_l_plasma_01_mk1, ware.turret_arg_m_laser_02_mk1, ware.shield_arg_m_standard_02_mk1, ware.thruster_gen_l_allround_01_mk1]"
+								level="1"
+								result="$loadoutskiron"
+							/>
+							<create_ship name="$MFEPatrol1" macro="macro.skiron_macro" capturable="true" commandeerable="false" sector="$mfe_hewastwin">
+								<pilot>
+									<select faction="faction.scaleplate" tags="tag.fighterpilot"/>
+								</pilot>
+								<owner exact="faction.scaleplate" overridenpc="true"/>
+								<loadout loadout="$loadoutskiron.{1}" />
+								<ammunition>
+									<ammunition macro="countermeasure_flares_01_macro" exact="20" />
+									<ammunition macro="ship_gen_s_fightingdrone_01_a_macro" exact="3" />
+									<ammunition macro="ship_gen_xs_repairdrone_01_a_macro" exact="3" />
+								</ammunition>
+								<people>
+									<fillpercent min="30" max="60" />
+									<person role="service" weight="70">
+										<select faction="faction.scaleplate" tags="tag.crew"/>
+									</person>
+									<person role="marine" weight="40">
+										<select faction="faction.scaleplate" tags="tag.marine"/>
+									</person>
+								</people>
+								<position x="-20km" y="1km" z="30km" />
+								<rotation yaw="10deg" pitch="1deg" roll="0deg" />
+							</create_ship>
+							<create_order object="$MFEPatrol1" id="'Patrol'" default="true">
+								<param name="space" value="$mfe_hewastwin"/>
+							</create_order>
+							
+							<generate_loadout
+								macro="macro.paracel_plunderer_macro" faction="faction.scaleplate"
+								wares="[ware.software_flightassistmk1, ware.software_dockmk2, ware.software_scannerlongrangemk1, ware.software_scannerobjectmk1, ware.software_targetmk1, ware.engine_arg_l_travel_01_mk1, ware.shield_tel_l_standard_01_mk2, ware.turret_arg_l_plasma_01_mk1, ware.turret_arg_m_shotgun_02_mk1, ware.shield_arg_m_standard_02_mk1, ware.thruster_gen_l_allround_01_mk1, ware.weapon_arg_l_destroyer_01_mk1]"
+								level="1"
+								result="$loadoutparacel"
+							/>
+							<create_ship name="$MFEPatrol2" macro="macro.paracel_plunderer_macro" capturable="true" commandeerable="false" sector="$mfe_hewastwin">
+								<pilot>
+									<select faction="faction.scaleplate" tags="tag.fighterpilot"/>
+								</pilot>
+								<owner exact="faction.scaleplate" overridenpc="true"/>
+								<loadout loadout="$loadoutparacel.{1}" />
+								<ammunition>
+									<ammunition macro="countermeasure_flares_01_macro" exact="20" />
+									<ammunition macro="ship_gen_xs_repairdrone_01_a_macro" exact="3" />
+								</ammunition>
+								<people>
+									<fillpercent min="30" max="60" />
+									<person role="service" weight="80">
+										<select faction="faction.scaleplate" tags="tag.crew"/>
+									</person>
+									<person role="marine" weight="30">
+										<select faction="faction.scaleplate" tags="tag.marine"/>
+									</person>
+								</people>
+								<position x="10km" y="-1km" z="70km" />
+								<rotation yaw="10deg" pitch="1deg" roll="0deg" />
+							</create_ship>
+							<create_order id="'AssignCommander'" object="$MFEPatrol2" immediate="true">
+								<param name="commander" value="$MFEPatrol1"/>
+								<param name="assignment" value="assignment.defence"/>
+								<param name="cancelorders" value="false"/>			
+							</create_order>	
+							
+							<generate_loadout
+								macro="macro.razorbill_plunderer_macro" faction="faction.scaleplate"
+								wares="[ware.software_flightassistmk1, ware.software_dockmk2, ware.software_scannerlongrangemk1, ware.software_scannerobjectmk1, ware.software_targetmk1, ware.engine_tel_l_allround_01_mk1, ware.shield_tel_l_standard_01_mk2, ware.turret_par_l_plasma_01_mk1, ware.turret_tel_m_laser_02_mk1, ware.shield_arg_m_standard_02_mk1, ware.thruster_gen_l_allround_01_mk2]"
+								level="1"
+								result="$loadoutrazorbill"
+							/>
+							<create_ship name="$MFEPatrol3" macro="macro.razorbill_plunderer_macro" capturable="true" commandeerable="false" sector="$mfe_hewastwin">
+								<pilot>
+									<select faction="faction.scaleplate" tags="tag.fighterpilot"/>
+								</pilot>
+								<owner exact="faction.scaleplate" overridenpc="true"/>
+								<loadout loadout="$loadoutrazorbill.{1}" />
+								<ammunition>
+									<ammunition macro="countermeasure_flares_01_macro" exact="20" />
+									<ammunition macro="ship_gen_s_fightingdrone_01_a_macro" exact="2" />
+									<ammunition macro="ship_gen_xs_repairdrone_01_a_macro" exact="3" />
+								</ammunition>
+								<people>
+									<fillpercent min="30" max="80" />
+									<person role="service" weight="80">
+										<select faction="faction.scaleplate" tags="tag.crew"/>
+									</person>
+									<person role="marine" weight="45">
+										<select faction="faction.scaleplate" tags="tag.marine"/>
+									</person>
+								</people>
+								<position x="12km" y="0km" z="71km" />
+								<rotation yaw="10deg" pitch="1deg" roll="0deg" />
+							</create_ship>
+							<create_order id="'AssignCommander'" object="$MFEPatrol3" immediate="true">
+								<param name="commander" value="$MFEPatrol1"/>
+								<param name="assignment" value="assignment.defence"/>
+								<param name="cancelorders" value="false"/>			
+							</create_order>
+						</do_if>
+					</actions>
+				</cue>
+			</cues>
+		</cue>
+	</cues>
+</mdscript>

@@ -1,0 +1,1221 @@
+<diff xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../xmllib/diff.xsd'>
+	<!-- HATIKVAH -->
+	<!-- Engines -->
+
+	<add sel="/wares/ware[@id='engine_arg_xl_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='engine_arg_xl_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='engine_arg_l_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='engine_arg_l_allround_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+
+
+
+	<add sel="/wares/ware[@id='engine_arg_m_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='engine_arg_m_allround_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+
+
+	<add sel="/wares/ware[@id='engine_arg_m_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='engine_arg_m_travel_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+
+
+	<add sel="/wares/ware[@id='engine_arg_m_combat_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='engine_arg_m_combat_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+
+
+
+	<add sel="/wares/ware[@id='engine_arg_s_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='engine_arg_s_allround_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='engine_arg_s_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='engine_arg_s_travel_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+
+
+	<add sel="/wares/ware[@id='engine_arg_s_combat_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='engine_arg_s_combat_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+
+	<!-- Turrets -->
+
+
+
+	<add sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+
+
+
+	<!-- M size -->
+	<!-- Argon -->
+	<add sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='turret_arg_m_laser_02_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="hatikvah" /> -->
+	<!-- </add> -->
+	<add sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_shotgun_02_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<!-- Shields -->
+	<add sel="/wares/ware[@id='shield_arg_xl_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='shield_arg_l_standard_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='shield_arg_m_standard_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='shield_arg_m_standard_02_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='shield_arg_s_standard_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='shield_arg_s_standard_01_mk3']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+
+	<!-- Weapons -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_mining_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_mining_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='weapon_gen_s_mining_01_mk2']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+
+	<!-- M size weapons -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_m_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_m_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<!-- S size weapons -->
+
+	<add sel="/wares/ware[@id='weapon_gen_s_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_cannon_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_burst_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+	<!-- Remove some weapons, let them have basic stuff only -->
+	<!-- <remove sel="/wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/owner[@faction='hatikvah']"/> -->
+	<!-- <remove sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/owner[@faction='hatikvah']"/> -->
+
+
+	<!-- Ships -->
+	<!-- <add sel="/wares/ware[@id='ship_arg_m_trans_container_01_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add> -->
+
+	<!-- <add sel="/wares/ware[@id='ship_arg_s_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add> -->
+	<!-- <add sel="/wares/ware[@id='ship_arg_l_trans_container_02_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add> -->
+
+
+	<add sel="/wares/ware[@id='ship_arg_xl_builder_01_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_xl_builder_01_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+
+	<add sel="/wares/ware[@id='ship_arg_l_destroyer_01_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_01_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_02_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_03_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_03_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_04_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_04_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_05_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_l_trans_container_05_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_m_trans_container_01_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_m_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_m_trans_container_02_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_m_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+
+
+
+
+	<add sel="/wares/ware[@id='ship_arg_s_trans_container_01_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_s_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_s_trans_container_02_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_s_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah"/>
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_m_bomber_01_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_s_fighter_01_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_s_fighter_01_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_s_fighter_02_a']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_s_fighter_02_b']/owner[last()]" pos="after">
+		<owner faction="hatikvah" />
+	</add>
+
+
+	<!-- Remove some ships, let them have argon only -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_l_destroyer_01_a']/owner[@faction='hatikvah']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_l_miner_liquid_01_a']/owner[@faction='hatikvah']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_l_miner_solid_01_a']/owner[@faction='hatikvah']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_m_miner_liquid_01_a']/owner[@faction='hatikvah']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_m_miner_solid_01_b']/owner[@faction='hatikvah']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_scout_01_a']/owner[@faction='hatikvah']"/> -->
+
+
+
+	<remove sel="/wares/ware[@id='ship_par_l_miner_liquid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_par_l_miner_liquid_01_b']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_par_l_miner_solid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_par_l_miner_solid_01_b']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_par_m_miner_liquid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_par_m_miner_liquid_01_b']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_par_m_miner_solid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_par_m_miner_solid_01_b']/owner[@faction='hatikvah']"/>
+
+	<remove sel="/wares/ware[@id='ship_tel_l_miner_liquid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_l_miner_liquid_01_b']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_l_miner_solid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_l_miner_solid_01_b']/owner[@faction='hatikvah']"/>
+
+	<remove sel="/wares/ware[@id='ship_tel_m_miner_liquid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_m_miner_liquid_01_b']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_m_miner_solid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_m_miner_solid_01_b']/owner[@faction='hatikvah']"/>
+
+	<remove sel="/wares/ware[@id='ship_par_s_miner_solid_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_s_miner_solid_01_a']/owner[@faction='hatikvah']"/>
+
+
+
+	<remove sel="/wares/ware[@id='ship_tel_s_fighter_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_s_fighter_01_b']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_s_scout_01_a']/owner[@faction='hatikvah']"/>
+	<remove sel="/wares/ware[@id='ship_tel_s_scout_01_b']/owner[@faction='hatikvah']"/>
+
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+																		<!-- SCALEPLATE -->
+
+	<!-- Engines -->
+
+	<!-- Argon --><!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<add sel="/wares/ware[@id='engine_arg_s_combat_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_s_combat_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_s_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_s_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_s_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_s_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='engine_arg_m_combat_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_m_combat_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_m_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_m_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_m_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_arg_m_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+  <add sel="/wares/ware[@id='engine_arg_l_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+  </add>
+
+	<add sel="/wares/ware[@id='engine_arg_l_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+  <add sel="/wares/ware[@id='engine_arg_xl_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+  </add>
+
+  <add sel="/wares/ware[@id='engine_arg_xl_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+  </add>
+
+
+	<!-- Teladi --><!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+	<!-- <add sel="/wares/ware[@id='engine_tel_s_combat_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='engine_tel_s_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<!-- <add sel="/wares/ware[@id='engine_tel_s_travel_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='engine_tel_s_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<!-- <add sel="/wares/ware[@id='engine_tel_s_allround_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='engine_tel_m_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<!-- <add sel="/wares/ware[@id='engine_tel_m_combat_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='engine_tel_m_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<!-- <add sel="/wares/ware[@id='engine_tel_m_allround_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<!-- <add sel="/wares/ware[@id='engine_tel_m_combat_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<!-- <add sel="/wares/ware[@id='engine_tel_m_travel_01_mk3']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<!-- Paranid --><!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<add sel="/wares/ware[@id='engine_par_s_combat_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_s_combat_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_s_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_s_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_s_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_s_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_m_combat_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_m_combat_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_m_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_m_allround_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_m_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='engine_par_m_travel_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+  <add sel="/wares/ware[@id='engine_par_l_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+  </add>
+
+	<add sel="/wares/ware[@id='engine_par_l_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+  <add sel="/wares/ware[@id='engine_par_xl_travel_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+  </add>
+
+  <add sel="/wares/ware[@id='engine_par_xl_allround_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+  </add>
+
+
+	<!-- Shields --><!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+	<!-- Teladi -->
+	<add sel="/wares/ware[@id='shield_tel_s_standard_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='shield_tel_xl_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<!-- Argon -->
+	<add sel="/wares/ware[@id='shield_arg_s_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='shield_arg_s_standard_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='shield_arg_m_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='shield_arg_m_standard_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='shield_arg_l_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='shield_arg_xl_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<!-- Paranid -->
+	<add sel="/wares/ware[@id='shield_par_s_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='shield_par_s_standard_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='shield_par_m_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='shield_par_m_standard_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='shield_par_l_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='shield_par_xl_standard_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<!-- Turrets --><!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+	<!-- L size -->
+	<!-- Argon -->
+	<add sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<!-- L size -->
+	<!-- Teladi -->
+	<add sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<add sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<!-- L size -->
+	<!-- Paranid -->
+	<add sel="/wares/ware[@id='turret_par_l_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_l_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<!-- M size -->
+	<!-- Telaid -->
+	<add sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='turret_tel_m_laser_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<add sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_tel_m_shotgun_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='turret_tel_m_guided_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+
+
+	<!-- M size -->
+	<!-- Argon -->
+	<add sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<add sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_laser_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_arg_m_shotgun_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='turret_arg_m_guided_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+
+
+	<!-- M size -->
+	<!-- Paranid -->
+	<add sel="/wares/ware[@id='turret_par_m_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_laser_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+
+	<!-- Weapons -->
+
+	<!-- L size weapons -->
+	<add sel="/wares/ware[@id='weapon_tel_l_destroyer_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='weapon_arg_l_destroyer_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='weapon_par_l_destroyer_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<!-- M size weapons -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_beam_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_gatling_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/owner[last()]" pos="after"> --><!-- already have access to it -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/owner[last()]" pos="after"> --><!-- already have access to it -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_m_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_m_guided_01_mk2']/owner[last()]" pos="after"> --><!-- Only basic equipment when applicable -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+
+	<!-- S size weapons -->
+
+	<add sel="/wares/ware[@id='weapon_gen_s_beam_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='weapon_gen_s_beam_01_mk2']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='weapon_gen_s_cannon_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_cannon_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_s_gatling_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_gatling_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_s_burst_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_burst_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/owner[last()]" pos="after"> --><!-- already have access to it -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_s_plasma_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_plasma_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_laser_01_mk1']/owner[last()]" pos="after"> --><!-- already have access to it -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_laser_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_shotgun_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+	<add sel="/wares/ware[@id='weapon_gen_s_guided_01_mk1']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<!-- <add sel="/wares/ware[@id='weapon_gen_s_guided_01_mk2']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+
+	<!-- Ships --><!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+	<!-- Prometheus -->
+	<!-- <add sel="/wares/ware[@id='ship_par_m_trans_container_03_a']/owner[last()]" pos="after"> -->
+		<!-- <owner faction="scaleplate" /> -->
+	<!-- </add> -->
+
+	<add sel="/wares/ware[@id='ship_tel_xl_resupplier_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_xl_resupplier_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+
+	<add sel="/wares/ware[@id='ship_tel_xl_builder_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_xl_builder_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+
+	<add sel="/wares/ware[@id='ship_tel_xl_carrier_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_xl_carrier_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+
+
+	<add sel="/wares/ware[@id='ship_tel_l_destroyer_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_l_destroyer_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+
+
+	<add sel="/wares/ware[@id='ship_tel_l_trans_container_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_l_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_l_trans_container_02_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_l_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='ship_tel_m_trans_container_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_m_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_m_trans_container_02_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_m_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<!-- Cormorant -->
+	<add sel="/wares/ware[@id='ship_tel_m_trans_container_03_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate"/>
+	</add>
+
+	<add sel="/wares/ware[@id='ship_tel_l_miner_solid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_l_miner_solid_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_tel_l_miner_liquid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_l_miner_liquid_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_tel_m_miner_solid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_m_miner_solid_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='ship_tel_m_miner_liquid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_m_miner_liquid_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<add sel="/wares/ware[@id='ship_tel_s_miner_solid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_tel_s_scout_02_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_s_scout_02_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_s_fighter_02_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_tel_s_fighter_02_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+
+
+										<!-- Argon -->
+
+	<add sel="/wares/ware[@id='ship_arg_l_destroyer_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate"/>
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_m_miner_liquid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_m_miner_liquid_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_m_miner_liquid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_m_miner_liquid_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_m_miner_solid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+	<add sel="/wares/ware[@id='ship_arg_m_miner_solid_01_b']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+
+	<add sel="/wares/ware[@id='ship_arg_s_miner_solid_01_a']/owner[last()]" pos="after">
+		<owner faction="scaleplate" />
+	</add>
+
+	<!-- Remove some ships, let them have argon/teladi mix of basic combat/plunderer ships -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_l_destroyer_01_a']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_scout_01_a']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_scout_01_b']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_trans_container_01_a']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_trans_container_01_b']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_trans_container_02_a']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_trans_container_02_b']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_par_s_trans_container_01_a']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_par_s_trans_container_01_b']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_tel_s_trans_container_01_a']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_tel_s_trans_container_01_b']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_scout_01_b']/owner[@faction='scaleplate']"/> -->
+	<!-- <remove sel="/wares/ware[@id='ship_arg_s_scout_01_b']/owner[@faction='scaleplate']"/> -->
+
+
+
+																						<!-- Alliance -->
+
+	<add sel="/wares/ware[@id='ship_par_l_miner_liquid_01_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_miner_liquid_01_b']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_miner_liquid_02_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_miner_solid_01_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_miner_solid_01_b']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_miner_solid_02_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_trans_container_01_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_trans_container_02_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_l_trans_container_03_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_m_corvette_01_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_m_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_m_trans_container_02_b']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_m_trans_container_03_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_m_trans_container_03_a']/owner[last()]" pos="after">
+		<owner faction="trinity"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_s_miner_solid_01_a']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	<add sel="/wares/ware[@id='ship_par_s_trans_container_01_b']/owner[last()]" pos="after">
+		<owner faction="alliance"/>
+	</add>
+	
+</diff>

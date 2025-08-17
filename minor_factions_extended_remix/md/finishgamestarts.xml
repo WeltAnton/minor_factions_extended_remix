@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<mdscript name="MFEFinishGamestarts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+		<cue name="MFE_Finish_Scaleplate_Start" module="mfe_scaleplate_start">
+			<conditions>
+				<event_cue_signalled cue="md.Setup.GameStart"/>
+			</conditions>
+			<actions>
+				<set_value name="$InitialMap" exact="[
+					macro.cluster_42_sector001_macro,          
+					macro.cluster_42_sector002_macro, 
+					macro.cluster_19_sector001_macro,
+					macro.cluster_19_sector002_macro,
+					macro.cluster_20_sector001_macro,
+					macro.cluster_18_sector001_macro,
+					macro.cluster_10_sector001_macro,
+					macro.cluster_22_sector001_macro,
+					macro.cluster_11_sector001_macro,
+					macro.cluster_24_sector001_macro,
+					macro.cluster_12_sector001_macro,
+					macro.cluster_13_sector001_macro,
+					macro.cluster_14_sector001_macro,
+					macro.cluster_29_sector001_macro,
+					macro.cluster_09_sector001_macro]"
+				/>
+				<!-- <set_value name="$UncoverShipyardsAndWharfs" exact="true"/> -->
+				<!-- <set_value name="$UncoverTradeStations" exact="true"/> -->
+				<set_value name="$UncoverAllStations" exact="true"/>
+				<include_actions ref="md.LIB_Generic.UncoverMap_SectorsAndGates"/>
+				
+				<find_sector name="$mfe_sca_startsector" macro="macro.cluster_42_sector002_macro"/>
+				<do_if value="$mfe_sca_startsector.exists">
+					<generate_loadout
+						macro="macro.ship_arg_m_bomber_02_a_macro" faction="faction.scaleplate"
+						wares="[ware.software_flightassistmk1, ware.software_dockmk1, ware.software_scannerlongrangemk1, ware.software_scannerobjectmk2, ware.software_targetmk1, ware.engine_arg_m_allround_01_mk2, ware.shield_arg_m_standard_01_mk1, ware.turret_tel_m_shotgun_01_mk1, ware.weapon_gen_m_laser_01_mk1, ware.thruster_gen_m_allround_01_mk1]"
+						level="1"
+						result="$loadoutescort"
+					/>
+					<create_ship name="$minotaurplayerescort" macro="macro.ship_arg_m_bomber_02_a_macro" zone="player.zone">
+						<pilot>
+							<select faction="faction.scaleplate" tags="tag.aipilot"/>
+						</pilot>
+						<owner exact="faction.player" overridenpc="true" />
+						<loadout loadout="$loadoutescort.{1}" />
+						<ammunition>
+							<ammunition macro="countermeasure_flares_01_macro" exact="5" />
+						</ammunition>
+						<people>
+							<fillpercent min="70" max="95" />
+							<person role="service" weight="40">
+								<select faction="faction.scaleplate" tags="tag.crew"/>
+							</person>
+							<person role="marine" weight="80">
+								<select faction="faction.scaleplate" tags="tag.marine"/>
+							</person>
+						</people>
+						<safepos object="player.ship" radius="1km" min="1km" max="7km"/>
+					</create_ship>
+					<set_skill entity="$minotaurplayerescort.pilot" type="skilltype.piloting" exact="10" />
+					<set_skill entity="$minotaurplayerescort.pilot" type="skilltype.engineering" exact="5" />
+				</do_if>
+			</actions>
+		</cue>
+		
+		<cue name="MFE_Finish_Hatikvah_Start" module="mfe_hatikvah_start">
+			<conditions>
+				<event_cue_signalled cue="md.Setup.GameStart"/>
+			</conditions>
+			<actions>
+				<set_faction_known faction="faction.antigone" known="true" />
+				<set_faction_known faction="faction.argon" known="true" />
+				<set_faction_known faction="faction.hatikvah" known="true" />
+				<set_faction_known faction="faction.holyorder" known="true" />
+				<set_faction_known faction="faction.ministry" known="true"/>
+				<set_faction_known faction="faction.scaleplate" known="true" />
+				<set_faction_known faction="faction.teladi" known="true" />
+				<set_faction_known faction="faction.split" known="true"/>
+				
+				<add_licence faction="faction.player" licencefaction="faction.hatikvah" type="militaryequipment"/>
+				<add_licence faction="faction.player" licencefaction="faction.hatikvah" type="militaryship"/>
+				<add_licence faction="faction.player" licencefaction="faction.hatikvah" type="capitalequipment"/>
+				<add_licence faction="faction.player" licencefaction="faction.hatikvah" type="capitalship"/>
+				
+				<set_value name="$InitialMap" exact="[
+					macro.cluster_29_sector001_macro,          
+					macro.cluster_29_sector002_macro, 
+					macro.cluster_14_sector001_macro,
+					macro.cluster_08_sector001_macro,
+					macro.cluster_13_sector001_macro,
+					macro.cluster_34_sector001_macro,
+					macro.cluster_09_sector001_macro,
+					macro.cluster_30_sector001_macro]"
+				/>
+				<set_value name="$UncoverAllStations" exact="true"/>
+				<include_actions ref="md.LIB_Generic.UncoverMap_SectorsAndGates"/>
+			</actions>
+		</cue>
+		
+		<cue name="MFE_Finish_Yaki_Start" module="mfe_yaki_start">
+			<conditions>
+				<event_cue_signalled cue="md.Setup.GameStart"/>
+			</conditions>
+			<actions>
+			
+				<!-- <signal_cue_instantly cue="Cover_Handler" param="table[$CoverShip = player.ship, $CoverFaction = faction.yaki, $TriggerFactionList = [faction.yaki, faction.xenon] ]"/> -->
+
+				<add_licence faction="faction.player" licencefaction="faction.yaki" type="militaryequipment"/>
+				<add_licence faction="faction.player" licencefaction="faction.yaki" type="militaryship"/>
+				<add_licence faction="faction.player" licencefaction="faction.yaki" type="generaluseequipment"/>
+				
+				<find_sector name="$YakiStationSector" macro="macro.Cluster_44_Sector001_macro"/>
+				<do_if value="$YakiStationSector.exists">
+					<set_value name="$Faction" exact="faction.yaki"/>
+					<set_value name="$LoadoutLevel" exact="0.5"/>
+					<!-- Create a wharf, then -->
+					<find_sector macro="macro.cluster_26_sector002_macro" name="$sector"/>
+					<find_zone name="$SpawnZone" macro="macro.zone001_cluster_45_sector001_macro"/>
+				
+					<create_position name="$Position" max="40km"/>
+					<set_value name="$Y_Position" min="-5km" max="5km"/>
+					<set_value name="$Position" exact="position.[$Position.x, $Y_Position, $Position.z]"/>
+
+					<!-- Spawn BH Wharf w/manager and defense controller state="componentstate.operational" -->
+					<create_station name="$station" constructionplan="'tel_wharf'" macro="macro.station_yak_piratebase_base_01_macro" owner="$Faction" sector="$sector" zone="$SpawnZone" state="componentstate.operational" comment="Ensures BH wharf exists.. hopefully :P">
+						<safepos y="-1km" min="20km" includeplotbox="true"/>
+					</create_station>
+							
+					<signal_objects object="player.galaxy" param="'init station'" param2="$station" param3="false"/>
+					<add_default_production_wares object="$station" lowerlimit="70" upperlimit="90"/>
+				  
+					<set_object_scanned object="$station"/> 
+					<add_workforce object="$station" race="race.argon" min="1000" max="1100" />
+					<add_units object="$station" category="unitcategory.transport" mk="1" exact="30"/>
+					<add_units object="$station" category="unitcategory.defence" mk="1" exact="30"/>
+					<add_units object="$station" category="unitcategory.repair" mk="1" exact="30"/>
+					<add_units object="$station" category="unitcategory.build" mk="1" exact="30"/>
+
+					<do_if value="$station?">
+						<do_if value="not $station.defencenpc.exists">
+							<create_cue_actor name="$defencemanager" cue="this">
+								<select tags="tag.defence"/>
+								<owner exact="$station.owner" />
+							</create_cue_actor>
+							<do_if value="$defencemanager">
+								<assign_control_entity object="$station" actor="$defencemanager" post="controlpost.defence" transfer="true"/>
+								<remove_cue_actor actor="$defencemanager" cue="this" />
+								<remove_value name="$defencemanager" />
+							</do_if>
+						</do_if>
+					</do_if>
+			  
+					<do_if value="$station?">
+						<do_if value="not $station.tradenpc.exists">
+							<do_if value="$room? and $station.owner != faction.xenon">
+								<create_platform_actor room="$room" post="controlpost.manager">
+									<select faction="$station.owner" tags="controlpost.manager.tag"/>
+									<owner exact="$station.owner" />
+								</create_platform_actor>
+							</do_if>
+							<do_else>
+								<create_cue_actor name="$trademanager" cue="this">
+									<select faction="$station.owner" tags="controlpost.manager.tag"/>
+									<owner exact="$station.owner" />
+								</create_cue_actor>
+								<do_if value="$trademanager">
+									<assign_control_entity object="$station" actor="$trademanager" post="controlpost.manager" transfer="true" />
+									<remove_cue_actor actor="$trademanager" cue="this" />
+									<remove_value name="$trademanager" />
+								</do_if>
+							</do_else>
+						</do_if>
+					</do_if>
+			  
+					<do_if value="$station?">
+						<do_if value="not $station.engineer.exists">
+							<create_cue_actor name="$engineer" cue="this">
+								<select tags="controlpost.engineer.tag"/>
+								<owner exact="$station.owner" />
+							</create_cue_actor>
+							<do_if value="$engineer">
+								<assign_control_entity object="$station" actor="$engineer" post="controlpost.engineer" transfer="true" />
+	  
+								<remove_cue_actor actor="$engineer" cue="this" />
+								<remove_value name="$engineer" />
+							</do_if>
+						</do_if>
+					</do_if>
+			  
+					<do_if value="$station.isclass.station and $station.canequipships and not $station.controlentity.{controlpost.shiptrader}.exists">
+						<debug_text text="'No shiptrader for shipyard/equipment dock \'' + $station.knownname + '\' in \'' + $station.zone.knownname" chance="0" />
+						<create_cue_actor name="$shiptrader" cue="this">
+							<select faction="$station.owner" tags="tag.shiptrader"/>
+							<owner exact="$station.owner" />
+						</create_cue_actor>
+						<assign_control_entity actor="$shiptrader" object="$station" post="controlpost.shiptrader" transfer="true"/>
+						<do_if value="$shiptrader.exists">
+							<signal_cue_instantly cue="md.NPC_Shiptrader.Base" param="$shiptrader"/>
+						</do_if>
+						<remove_value name="$shiptrader"/>
+					</do_if> 
+
+					<remove_value name="$sector"/>
+					<remove_value name="$SpawnZone"/>
+					<remove_value name="$Faction"/>
+				</do_if>
+				
+				<set_value name="$InitialMap" exact="[
+					macro.cluster_112_sector001_macro,          
+					macro.cluster_112_sector002_macro, 
+					macro.cluster_33_sector001_macro,
+					macro.cluster_32_sector001_macro,
+					macro.cluster_32_sector002_macro,
+					macro.cluster_29_sector001_macro,
+					macro.cluster_29_sector002_macro,
+					macro.cluster_48_sector001_macro,
+					macro.cluster_100_sector001_macro,
+					macro.cluster_27_sector001_macro,
+					macro.cluster_28_sector001_macro,
+					macro.cluster_113_sector001_macro,
+					macro.cluster_14_sector001_macro,
+					macro.cluster_41_sector001_macro,
+					macro.cluster_49_sector001_macro,
+					macro.cluster_26_sector001_macro,
+					macro.cluster_26_sector002_macro]"
+				/>
+				<set_value name="$UncoverShipyardsAndWharfs" exact="true"/>
+				<set_value name="$UncoverTradeStations" exact="true"/>
+				<include_actions ref="md.LIB_Generic.UncoverMap_SectorsAndGates"/>
+			</actions>
+		</cue>
+	</cues>
+</mdscript>

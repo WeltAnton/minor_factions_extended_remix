@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="MFEFixStations">
+	<cues>
+		<cue name="Init">
+			<conditions>
+				<check_any>
+					<event_game_loaded/>
+				</check_any>
+			</conditions>
+			<cues>
+				
+				<!-- HAT Wharf -->
+				<cue name="mfe_EnsureHATWharf" instantiate="false">
+					<delay exact="10s"/>
+					<actions>
+						<set_value name="$Wharf" exact="null"/>
+						<find_station name="$Wharf" space="player.galaxy" owner="faction.hatikvah">
+							<match_any wharf="true"/>
+						</find_station>
+						<do_if value="$Wharf == null">
+							<set_value name="$Faction" exact="faction.hatikvah"/>
+							<set_value name="$LoadoutLevel" exact="0.5"/>
+							<!-- Create a wharf, then -->
+							<find_sector macro="macro.cluster_29_sector001_macro" name="$sector"/>
+							<find_zone name="$SpawnZone" macro="macro.zone004_cluster_29_sector001_macro"/>
+				
+							<create_position name="$Position" max="40km"/>
+							<set_value name="$Y_Position" min="-5km" max="5km"/>
+							<set_value name="$Position" exact="position.[$Position.x, $Y_Position, $Position.z]"/>
+
+							<!-- Spawn BH Wharf w/manager and defense controller state="componentstate.operational" -->
+							<create_station name="$station" constructionplan="'arg_wharf'" macro="macro.station_gen_factory_base_01_macro" owner="$Faction" sector="$sector" zone="$SpawnZone" state="componentstate.operational" comment="Ensures BH wharf exists.. hopefully :P">
+								<safepos y="-1km" min="20km" includeplotbox="true"/>
+							</create_station>
+							
+							<signal_objects object="player.galaxy" param="'init station'" param2="$station" param3="false"/>
+							<add_default_production_wares object="$station" lowerlimit="40" upperlimit="90"/>
+				  
+							<set_object_scanned object="$station"/> 
+							<!-- <create_control_entity object="$station" post="controlpost.manager">
+								<select tags="controlpost.manager.tag"/>
+								<owner exact="$station.owner"/>
+							</create_control_entity>
+							<create_control_entity object="$station" post="controlpost.defence">
+								<select tags="controlpost.defence.tag"/>
+								<owner exact="$station.owner"/>
+							</create_control_entity> -->
+							<add_workforce object="$station" race="race.argon" min="1000" max="1100" />
+							<add_units object="$station" category="unitcategory.transport" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.defence" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.repair" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.build" mk="1" exact="30"/>
+
+							<do_if value="$station?">
+								<do_if value="not $station.defencenpc.exists">
+									<create_cue_actor name="$defencemanager" cue="this">
+										<select tags="tag.defence"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$defencemanager">
+										<assign_control_entity object="$station" actor="$defencemanager" post="controlpost.defence" transfer="true"/>
+										<remove_cue_actor actor="$defencemanager" cue="this" />
+										<remove_value name="$defencemanager" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.tradenpc.exists">
+									<do_if value="$room? and $station.owner != faction.xenon">
+										<create_platform_actor room="$room" post="controlpost.manager">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_platform_actor>
+									</do_if>
+									<do_else>
+										<create_cue_actor name="$trademanager" cue="this">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_cue_actor>
+										<do_if value="$trademanager">
+											<assign_control_entity object="$station" actor="$trademanager" post="controlpost.manager" transfer="true" />
+											<remove_cue_actor actor="$trademanager" cue="this" />
+											<remove_value name="$trademanager" />
+										</do_if>
+									</do_else>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.engineer.exists">
+									<create_cue_actor name="$engineer" cue="this">
+										<select tags="controlpost.engineer.tag"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$engineer">
+										<assign_control_entity object="$station" actor="$engineer" post="controlpost.engineer" transfer="true" />
+			  
+										<remove_cue_actor actor="$engineer" cue="this" />
+										<remove_value name="$engineer" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station.isclass.station and $station.canequipships and not $station.controlentity.{controlpost.shiptrader}.exists">
+								<debug_text text="'No shiptrader for shipyard/equipment dock \'' + $station.knownname + '\' in \'' + $station.zone.knownname" chance="0" />
+								<create_cue_actor name="$shiptrader" cue="this">
+									<select faction="$station.owner" tags="tag.shiptrader"/>
+									<owner exact="$station.owner" />
+								</create_cue_actor>
+								<assign_control_entity actor="$shiptrader" object="$station" post="controlpost.shiptrader" transfer="true"/>
+								<do_if value="$shiptrader.exists">
+									<signal_cue_instantly cue="md.NPC_Shiptrader.Base" param="$shiptrader"/>
+								</do_if>
+								<remove_value name="$shiptrader"/>
+							</do_if> 
+
+							<remove_value name="$sector"/>
+							<remove_value name="$SpawnZone"/>
+							<remove_value name="$Faction"/>
+
+						</do_if>
+					</actions>
+				</cue>
+
+				<!-- <cue name="Fix_representative" instantiate="false" >
+					<delay exact="5min" />
+					<actions>
+						<set_value name="$Faction" exact="faction.hatikvah"/>
+						<do_if value="(md.$FactionData.{$Faction}.$Headquarters?) and (md.$FactionData.{$Faction}.$Headquarters.isoperational) and (not md.$FactionData.{$Faction}.$Representative?)">
+							<signal_cue cue="CreateNewFactionRepresentative"/>
+						</do_if>
+						<remove_value name="$Faction"/>
+					</actions>
+				</cue> -->
+				
+				<!-- HAT Shipyard -->
+				<cue name="mfe_EnsureHATShipyard" instantiate="false">
+					<delay exact="10s"/>
+					<actions>
+						<set_value name="$Shipyard" exact="null"/>
+						<find_station name="$Shipyard" space="player.galaxy" owner="faction.hatikvah">
+							<match_any shipyard="true"/>
+						</find_station>
+						<do_if value="$Shipyard == null">
+							<set_value name="$Faction" exact="faction.hatikvah"/>
+							<set_value name="$LoadoutLevel" exact="0.5"/>
+							<!-- Create a Shipyard, then -->
+							<find_sector macro="macro.cluster_29_sector002_macro" name="$sector"/>
+							<find_zone name="$SpawnZone" macro="macro.zone003_cluster_29_sector002_macro"/>
+				
+							<create_position name="$Position" max="40km"/>
+							<set_value name="$Y_Position" min="-5km" max="5km"/>
+							<set_value name="$Position" exact="position.[$Position.x, $Y_Position, $Position.z]"/>
+
+							<!-- Spawn BH Shipyard w/manager and defense controller state="componentstate.operational" -->
+							<create_station name="$station" constructionplan="'arg_shipyard'" macro="macro.station_gen_factory_base_01_macro" owner="$Faction" sector="$sector" zone="$SpawnZone" state="componentstate.operational" comment="Ensures BH wharf exists.. hopefully :P">
+								<safepos y="-1km" min="20km" includeplotbox="true"/>
+							</create_station>
+							
+							<signal_objects object="player.galaxy" param="'init station'" param2="$station" param3="false"/>
+							<add_default_production_wares object="$station" lowerlimit="40" upperlimit="90"/>
+				  
+							<set_object_scanned object="$station"/> 
+
+							<add_workforce object="$station" race="race.argon" min="1000" max="1100" />
+							<add_units object="$station" category="unitcategory.transport" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.defence" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.repair" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.build" mk="1" exact="30"/>
+
+							<do_if value="$station?">
+								<do_if value="not $station.defencenpc.exists">
+									<create_cue_actor name="$defencemanager" cue="this">
+										<select tags="tag.defence"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$defencemanager">
+										<assign_control_entity object="$station" actor="$defencemanager" post="controlpost.defence" transfer="true"/>
+										<remove_cue_actor actor="$defencemanager" cue="this" />
+										<remove_value name="$defencemanager" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.tradenpc.exists">
+									<do_if value="$room? and $station.owner != faction.xenon">
+										<create_platform_actor room="$room" post="controlpost.manager">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_platform_actor>
+									</do_if>
+									<do_else>
+										<create_cue_actor name="$trademanager" cue="this">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_cue_actor>
+										<do_if value="$trademanager">
+											<assign_control_entity object="$station" actor="$trademanager" post="controlpost.manager" transfer="true" />
+											<remove_cue_actor actor="$trademanager" cue="this" />
+											<remove_value name="$trademanager" />
+										</do_if>
+									</do_else>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.engineer.exists">
+									<create_cue_actor name="$engineer" cue="this">
+										<select tags="controlpost.engineer.tag"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$engineer">
+										<assign_control_entity object="$station" actor="$engineer" post="controlpost.engineer" transfer="true" />
+			  
+										<remove_cue_actor actor="$engineer" cue="this" />
+										<remove_value name="$engineer" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station.isclass.station and $station.canequipships and not $station.controlentity.{controlpost.shiptrader}.exists">
+								<debug_text text="'No shiptrader for shipyard/equipment dock \'' + $station.knownname + '\' in \'' + $station.zone.knownname" chance="0" />
+								<create_cue_actor name="$shiptrader" cue="this">
+									<select faction="$station.owner" tags="tag.shiptrader"/>
+									<owner exact="$station.owner" />
+								</create_cue_actor>
+								<assign_control_entity actor="$shiptrader" object="$station" post="controlpost.shiptrader" transfer="true"/>
+								<do_if value="$shiptrader.exists">
+									<signal_cue_instantly cue="md.NPC_Shiptrader.Base" param="$shiptrader"/>
+								</do_if>
+								<remove_value name="$shiptrader"/>
+							</do_if> 
+
+							<remove_value name="$sector"/>
+							<remove_value name="$SpawnZone"/>
+							<remove_value name="$Faction"/>
+
+						</do_if>
+					</actions>
+				</cue>
+				
+				
+				
+				<!-- SCA Shipyard -->
+				<cue name="mfe_EnsureSCAShipyard" instantiate="false">
+					<delay exact="10s"/>
+					<actions>
+						<set_value name="$Shipyard" exact="null"/>
+						<find_station name="$Shipyard" space="player.galaxy" owner="faction.scaleplate">
+							<match_any shipyard="true"/>
+						</find_station>
+						<do_if value="$Shipyard == null">
+							<set_value name="$Faction" exact="faction.scaleplate"/>
+							<set_value name="$LoadoutLevel" exact="0.9"/>
+							<!-- Create a Shipyard, then -->
+							<find_sector macro="macro.cluster_04_sector001_macro" name="$sector"/>
+							<find_zone name="$SpawnZone" macro="macro.zone003_cluster_04_sector001_macro"/>
+				
+							<create_position name="$Position" max="40km"/>
+							<set_value name="$Y_Position" min="-5km" max="5km"/>
+							<set_value name="$Position" exact="position.[$Position.x, $Y_Position, $Position.z]"/>
+
+							<!-- Spawn BH Shipyard w/manager and defense controller state="componentstate.operational" -->
+							<create_station name="$station" constructionplan="'tel_shipyard'" macro="macro.station_gen_factory_base_01_macro" owner="$Faction" sector="$sector" zone="$SpawnZone" state="componentstate.operational" comment="Ensures BH wharf exists.. hopefully :P">
+								<safepos y="-1km" min="20km" includeplotbox="true"/>
+							</create_station>
+							
+							<signal_objects object="player.galaxy" param="'init station'" param2="$station" param3="false"/>
+							<add_default_production_wares object="$station" lowerlimit="40" upperlimit="90"/>
+				  
+							<set_object_scanned object="$station"/> 
+
+							<add_workforce object="$station" race="race.teladi" min="1000" max="1100" />
+							<add_units object="$station" category="unitcategory.transport" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.defence" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.repair" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.build" mk="1" exact="30"/>
+
+							<do_if value="$station?">
+								<do_if value="not $station.defencenpc.exists">
+									<create_cue_actor name="$defencemanager" cue="this">
+										<select tags="tag.defence"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$defencemanager">
+										<assign_control_entity object="$station" actor="$defencemanager" post="controlpost.defence" transfer="true"/>
+										<remove_cue_actor actor="$defencemanager" cue="this" />
+										<remove_value name="$defencemanager" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.tradenpc.exists">
+									<do_if value="$room? and $station.owner != faction.xenon">
+										<create_platform_actor room="$room" post="controlpost.manager">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_platform_actor>
+									</do_if>
+									<do_else>
+										<create_cue_actor name="$trademanager" cue="this">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_cue_actor>
+										<do_if value="$trademanager">
+											<assign_control_entity object="$station" actor="$trademanager" post="controlpost.manager" transfer="true" />
+											<remove_cue_actor actor="$trademanager" cue="this" />
+											<remove_value name="$trademanager" />
+										</do_if>
+									</do_else>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.engineer.exists">
+									<create_cue_actor name="$engineer" cue="this">
+										<select tags="controlpost.engineer.tag"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$engineer">
+										<assign_control_entity object="$station" actor="$engineer" post="controlpost.engineer" transfer="true" />
+			  
+										<remove_cue_actor actor="$engineer" cue="this" />
+										<remove_value name="$engineer" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station.isclass.station and $station.canequipships and not $station.controlentity.{controlpost.shiptrader}.exists">
+								<debug_text text="'No shiptrader for shipyard/equipment dock \'' + $station.knownname + '\' in \'' + $station.zone.knownname" chance="0" />
+								<create_cue_actor name="$shiptrader" cue="this">
+									<select faction="$station.owner" tags="tag.shiptrader"/>
+									<owner exact="$station.owner" />
+								</create_cue_actor>
+								<assign_control_entity actor="$shiptrader" object="$station" post="controlpost.shiptrader" transfer="true"/>
+								<do_if value="$shiptrader.exists">
+									<signal_cue_instantly cue="md.NPC_Shiptrader.Base" param="$shiptrader"/>
+								</do_if>
+								<remove_value name="$shiptrader"/>
+							</do_if> 
+
+							<remove_value name="$sector"/>
+							<remove_value name="$SpawnZone"/>
+							<remove_value name="$Faction"/>
+
+						</do_if>
+					</actions>
+				</cue>
+				
+				
+				<!-- SCA Wharf -->
+				<cue name="mfe_EnsureSCAWharf" instantiate="false">
+					<delay exact="10s"/>
+					<actions>
+						<set_value name="$Wharf" exact="null"/>
+						<find_station name="$Wharf" space="player.galaxy" owner="faction.scaleplate">
+							<match_any wharf="true"/>
+						</find_station>
+						<do_if value="$Wharf == null">
+							<set_value name="$Faction" exact="faction.scaleplate"/>
+							<set_value name="$LoadoutLevel" exact="0.9"/>
+							<!-- Create a wharf, then -->
+							<find_sector macro="macro.cluster_45_sector001_macro" name="$sector"/>
+							<find_zone name="$SpawnZone" macro="macro.zone001_cluster_45_sector001_macro"/>
+				
+							<create_position name="$Position" max="40km"/>
+							<set_value name="$Y_Position" min="-5km" max="5km"/>
+							<set_value name="$Position" exact="position.[$Position.x, $Y_Position, $Position.z]"/>
+
+							<!-- Spawn BH Wharf w/manager and defense controller state="componentstate.operational" -->
+							<create_station name="$station" constructionplan="'tel_wharf'" macro="macro.station_gen_factory_base_01_macro" owner="$Faction" sector="$sector" zone="$SpawnZone" state="componentstate.operational" comment="Ensures BH wharf exists.. hopefully :P">
+								<safepos y="-1km" min="20km" includeplotbox="true"/>
+							</create_station>
+							
+							<signal_objects object="player.galaxy" param="'init station'" param2="$station" param3="false"/>
+							<add_default_production_wares object="$station" lowerlimit="40" upperlimit="90"/>
+				  
+							<set_object_scanned object="$station"/> 
+							<!-- <create_control_entity object="$station" post="controlpost.manager">
+								<select tags="controlpost.manager.tag"/>
+								<owner exact="$station.owner"/>
+							</create_control_entity>
+							<create_control_entity object="$station" post="controlpost.defence">
+								<select tags="controlpost.defence.tag"/>
+								<owner exact="$station.owner"/>
+							</create_control_entity> -->
+							<add_workforce object="$station" race="race.teladi" min="1000" max="1100" />
+							<add_units object="$station" category="unitcategory.transport" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.defence" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.repair" mk="1" exact="30"/>
+							<add_units object="$station" category="unitcategory.build" mk="1" exact="30"/>
+
+							<do_if value="$station?">
+								<do_if value="not $station.defencenpc.exists">
+									<create_cue_actor name="$defencemanager" cue="this">
+										<select tags="tag.defence"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$defencemanager">
+										<assign_control_entity object="$station" actor="$defencemanager" post="controlpost.defence" transfer="true"/>
+										<remove_cue_actor actor="$defencemanager" cue="this" />
+										<remove_value name="$defencemanager" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.tradenpc.exists">
+									<do_if value="$room? and $station.owner != faction.xenon">
+										<create_platform_actor room="$room" post="controlpost.manager">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_platform_actor>
+									</do_if>
+									<do_else>
+										<create_cue_actor name="$trademanager" cue="this">
+											<select faction="$station.owner" tags="controlpost.manager.tag"/>
+											<owner exact="$station.owner" />
+										</create_cue_actor>
+										<do_if value="$trademanager">
+											<assign_control_entity object="$station" actor="$trademanager" post="controlpost.manager" transfer="true" />
+											<remove_cue_actor actor="$trademanager" cue="this" />
+											<remove_value name="$trademanager" />
+										</do_if>
+									</do_else>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station?">
+								<do_if value="not $station.engineer.exists">
+									<create_cue_actor name="$engineer" cue="this">
+										<select tags="controlpost.engineer.tag"/>
+										<owner exact="$station.owner" />
+									</create_cue_actor>
+									<do_if value="$engineer">
+										<assign_control_entity object="$station" actor="$engineer" post="controlpost.engineer" transfer="true" />
+			  
+										<remove_cue_actor actor="$engineer" cue="this" />
+										<remove_value name="$engineer" />
+									</do_if>
+								</do_if>
+							</do_if>
+			  
+							<do_if value="$station.isclass.station and $station.canequipships and not $station.controlentity.{controlpost.shiptrader}.exists">
+								<debug_text text="'No shiptrader for shipyard/equipment dock \'' + $station.knownname + '\' in \'' + $station.zone.knownname" chance="0" />
+								<create_cue_actor name="$shiptrader" cue="this">
+									<select faction="$station.owner" tags="tag.shiptrader"/>
+									<owner exact="$station.owner" />
+								</create_cue_actor>
+								<assign_control_entity actor="$shiptrader" object="$station" post="controlpost.shiptrader" transfer="true"/>
+								<do_if value="$shiptrader.exists">
+									<signal_cue_instantly cue="md.NPC_Shiptrader.Base" param="$shiptrader"/>
+								</do_if>
+								<remove_value name="$shiptrader"/>
+							</do_if> 
+
+							<remove_value name="$sector"/>
+							<remove_value name="$SpawnZone"/>
+							<remove_value name="$Faction"/>
+
+						</do_if>
+					</actions>
+				</cue>
+
+			</cues>
+		</cue>
+	</cues>
+</mdscript>

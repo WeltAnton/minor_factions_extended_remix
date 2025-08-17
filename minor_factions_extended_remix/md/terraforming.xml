@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+	<!-- make list with ships from particular job -->
+	<add sel="/mdscript[@name='Terraforming']/cues/cue[@name='Start']/cues/cue[@name='Terraforming_ScalePlateGreen']/cues/cue[@name='Terraforming_ScalePlateGreen_MissionComplete']/cues/cue[@name='Terraforming_ScalePlateGreen_TransferJobShipsToPlayer']/actions/find_ship[@name='$Plunderers_L']" pos="after">
+		<find_ship name="$Plunderers_L_Extra" space="player.galaxy" job="'scaleplate_plunderer_l_cluster_extra'" multiple="true"/>
+	</add>
+	
+	<!-- transfer the ships to player but 2 -->
+	<add sel="/mdscript[@name='Terraforming']/cues/cue[@name='Start']/cues/cue[@name='Terraforming_ScalePlateGreen']/cues/cue[@name='Terraforming_ScalePlateGreen_MissionComplete']/cues/cue[@name='Terraforming_ScalePlateGreen_TransferJobShipsToPlayer']/actions/do_for_each[@in='$Plunderers_L']" pos="after">
+		<do_for_each in="$Plunderers_L_Extra" name="$Ship" counter="$i">
+			<!--leave 2 ship for the new job-->
+			<do_if value="$i > 2">
+				<run_actions ref="Terraforming_ScalePlateGreen_TransferJobShipToPlayer">
+					<param name="Ship" value="$Ship"/>
+					<param name="AddCrew" value="true"/>
+				</run_actions>
+			</do_if>
+		</do_for_each>
+	</add>
+
+	<!-- handle the job switch -->
+	<add sel="/mdscript[@name='Terraforming']/cues/cue[@name='Start']/cues/cue[@name='Terraforming_ScalePlateGreen']/cues/cue[@name='Terraforming_ScalePlateGreen_MissionComplete']/cues/cue[@name='Terraforming_ScalePlateGreen_TransferJobShipsToPlayer']/actions/set_job_active[@job=&quot;'scaleplate_plunderer_l_cluster_reduced'&quot;]" pos="after">
+		<set_job_active job="'scaleplate_plunderer_l_cluster_extra'" activate="false" successor="'scaleplate_plunderer_l_cluster_extra_reduced'"/>
+		<set_job_active job="'scaleplate_plunderer_l_cluster_extra_reduced'" activate="true"/>
+	</add>
+
+
+
+</diff>

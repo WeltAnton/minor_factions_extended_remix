@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+	<add sel="/ships">
+		<ship id="sca_heavydestroyer" group="sca_heavydestroyer_l">
+			<category tags="[military, heavydestroyer, plunderer, mission]" faction="[scaleplate]" size="ship_l"/>
+			<owner exact="scaleplate" overridenpc="true"/>
+			<pilot>
+				<select faction="scaleplate" tags="commander"/>
+			</pilot>
+			<basket basket="pirate_container"/>
+			<drop ref="ship_large_military"/>
+			<people ref="scaleplate_pirate_crew"/>
+		</ship>
+
+		<ship id="hat_blockaderunner_trader" group="hat_blockaderunner_trader_m">
+			<category tags="[blockaderunner, mfe, mission]" faction="[hatikvah]" size="ship_m"/>
+			<pilot>
+				<select faction="hatikvah" tags="traderpilot"/>
+			</pilot>
+			<drop ref="ship_medium_civilian"/>
+			<people ref="hatikvah_pirate_crew"/>
+		</ship>
+		
+		<ship id="hat_xlminer" group="hat_xlminer_xl">
+			<category tags="[xlminer, mfe, solid, mission]" faction="[argon, antigone, hatikvah]" size="ship_xl"/>
+			<pilot>
+				<select faction="hatikvah" tags="traderpilot"/>
+			</pilot>
+			<drop ref="ship_large_civilian"/>
+			<people ref="hatikvah_pirate_crew"/>
+		</ship>
+
+		<ship id="hat_xltrader" group="hat_xltrader_xl">
+			<category tags="[xltrader, mfe, mission, container]" faction="[argon, antigone, hatikvah]" size="ship_xl"/>
+			<pilot>
+				<select faction="hatikvah" tags="traderpilot"/>
+			</pilot>
+			<drop ref="ship_large_civilian"/>
+			<people ref="hatikvah_pirate_crew"/>
+		</ship>
+
+		<ship id="hat_heavyfrigate_patrol" group="hat_heavyfrigate_patrol_l">
+			<category tags="[military, heavyfrigate, mfe, mission]" faction="[hatikvah]" size="ship_l"/>
+			<pilot>
+				<select faction="hatikvah" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="hatikvah_pirate_crew"/>
+		</ship>
+
+		<ship id="sca_blockaderunner_trader" group="sca_blockaderunner_trader_m">
+			<category tags="[blockaderunner, smuggler, mfe, mission]" faction="[scaleplate]" size="ship_m"/>
+			<pilot>
+				<select faction="scaleplate" tags="traderpilot"/>
+			</pilot>
+			<drop ref="ship_small_military"/>
+			<people ref="scaleplate_pirate_crew"/>
+		</ship>
+
+		<ship id="sca_station_patrol" group="sca_patrol_xl">
+			<category tags="[sokrotaplunderer, mission, xlpatrol]" faction="[scaleplate]" size="ship_xl"/>
+			<owner exact="scaleplate" overridenpc="true"/>
+			<pilot>
+				<select faction="scaleplate" tags="commander"/>
+			</pilot>
+			<basket basket="pirate_container"/>
+			<drop ref="ship_large_military"/>
+			<people ref="scaleplate_pirate_crew"/>
+		</ship>
+
+		<ship id="sca_gunship_escort" group="sca_gunship_m">
+			<category tags="[gunship, mfe, mission]" faction="[scaleplate]" size="ship_m"/>
+			<pilot>
+				<select faction="scaleplate" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_small_military"/>
+			<people ref="scaleplate_pirate_crew"/>
+		</ship>
+
+		<ship id="sca_destroyer_escort" group="sca_escort_l">
+			<category tags="[lescort, mfe, mission]" faction="[scaleplate]" size="ship_l"/>
+			<owner exact="scaleplate" overridenpc="true"/>
+			<pilot>
+				<select faction="scaleplate" tags="fighterpilot"/>
+			</pilot>
+			<basket basket="pirate_container"/>
+			<drop ref="ship_large_military"/>
+			<people ref="scaleplate_pirate_crew"/>
+		</ship>
+
+		<ship id="ali_explorer_s_patrol" group="ali_explorer_s">
+			<category tags="[allianceexplorer, mfe, mission]" faction="[alliance]" size="ship_s"/>
+			<pilot>
+				<select faction="alliance" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_small_military"/>
+			<people ref="paranid_military_crew"/>
+		</ship>
+
+		<ship id="ali_explorer_xl_patrol" group="ali_explorer_xl">
+			<category tags="[allianceexplorer, mfe, mission]" faction="[alliance]" size="ship_xl"/>
+			<pilot>
+				<select faction="alliance" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_civilian"/>
+			<people ref="paranid_freighter_crew"/>
+		</ship>
+	</add>
+
+<!-- 		<ship id="sca_destroyer_command" group="sca_command_l">
+			<category tags="[lcommand, mfe, mission]" faction="[scaleplate]" size="ship_l"/>
+			<owner exact="scaleplate" overridenpc="true"/>
+			<pilot>
+				<select faction="scaleplate" tags="commander"/>
+			</pilot>
+			<basket basket="pirate_container"/>
+			<drop ref="ship_large_military"/>
+			<people ref="scaleplate_pirate_crew"/>
+		</ship> -->
+
+
+	<!-- Converts SVO baku m plunderer into MFE m plunderer -->
+<!-- 		<ship id="sca_blockaderunner_plunderer" group="sca_blockaderunner_plunderer_m">
+			<category tags="[blockaderunner, plunderer, mfe, mission]" faction="[scaleplate]" size="ship_m"/>
+			<pilot>
+				<select faction="scaleplate" tags="commander"/>
+			</pilot>
+			<drop ref="ship_small_military"/>
+			<people ref="scaleplate_pirate_crew"/>
+		</ship> -->
+</diff>

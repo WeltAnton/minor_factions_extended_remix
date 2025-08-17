@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+
+	<!-- ############################################################################################################################## -->
+	
+	
+	<!-- ################################################# -->
+	<!--                   SPAWN BE GONE                   -->
+	<!-- ################################################# -->
+	
+	<!-- Scaleplate Vanila Jobs -->
+	<replace sel="/jobs/job[@id='scaleplate_plunderer_l_cluster'][@name='{20204,4101}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_l_cluster'][@name='{20204,4101}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_plunderer_l_cluster_reduced'][@name='{20204,4101}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_l_cluster_reduced'][@name='{20204,4101}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_scavenger_m_cluster'][@name='{20204,4301}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_scavenger_m_cluster'][@name='{20204,4301}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_plunderer_m_cluster'][@name='{20204,4301}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_m_cluster'][@name='{20204,4301}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_smuggler_s'][@name='{20204,10009}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_smuggler_s'][@name='{20204,10009}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_scavenger_sm_deepspace'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_scavenger_sm_deepspace'][@name='{20204,4201}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_fighter_escort_s'][@name='{20204,3501}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_fighter_escort_s'][@name='{20204,3501}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_scavenger_m_cluster_bor_core'][@name='{20204,4301}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_scavenger_m_cluster_bor_core'][@name='{20204,4301}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_scavenger_s_cluster_bor_core'][@name='{20204,4301}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_scavenger_s_cluster_bor_core'][@name='{20204,4301}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_plunderer_l_cluster_bor_outer'][@name='{20204,4101}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_l_cluster_bor_outer'][@name='{20204,4101}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='scaleplate_scavenger_m_cluster_bor_outer'][@name='{20204,4301}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='scaleplate_scavenger_m_cluster_bor_outer'][@name='{20204,4301}']/environment/@gate"/>
+	
+	<!-- Hatikvah Vanila Jobs -->
+	<replace sel="/jobs/job[@id='hatikvah_resourcescout_sm_deepspace_single'][@name='{20204,10049}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='hatikvah_resourcescout_sm_deepspace_single'][@name='{20204,10049}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='hatikvah_free_miner_ml_liquid_deepspace_single'][@name='{20204,5701}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='hatikvah_free_miner_ml_liquid_deepspace_single'][@name='{20204,5701}']/environment/@gate"/>
+	<replace sel="/jobs/job[@id='hatikvah_free_miner_l_solid_deepspace_largegroup'][@name='{20204,5601}']/environment/@buildatshipyard">true</replace>
+	<remove sel="/jobs/job[@id='hatikvah_free_miner_l_solid_deepspace_largegroup'][@name='{20204,5601}']/environment/@gate"/>
+
+
+	<!-- yaki Pact Deep Space Jobs from Yaki Evolutiion --><!-- changed in Yaki Evolutiion Remix -->
+	
+	<!-- <replace sel="/jobs/job[@id='yaki_scavenger_sm_deepspace'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='yaki_scavenger_sm_deepspace'][@name='{20204,4201}']/environment/@gate"/> -->
+	<!-- <replace sel="/jobs/job[@id='yaki_fighter_escort_s'][@name='{20204,3501}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='yaki_fighter_escort_s'][@name='{20204,3501}']/environment/@gate"/> -->
+
+
+
+	<!-- SVE Jobs -->
+	
+	<!-- <replace sel="/jobs/job[@id='scaleplate_smuggler_baku'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='scaleplate_smuggler_baku'][@name='{20204,4201}']/environment/@gate"/> -->
+	<!-- <replace sel="/jobs/job[@id='scaleplate_plunderer_baku_cluster'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='scaleplate_plunderer_baku_cluster'][@name='{20204,4201}']/environment/@gate"/> -->
+	
+	<!-- <replace sel="/jobs/job[@id='hatikvah_free_miner_xl_solid_hatram_miner'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='hatikvah_free_miner_xl_solid_hatram_miner'][@name='{20204,4201}']/environment/@gate"/> -->
+
+	<!-- <replace sel="/jobs/job[@id='scaleplate_plunderer_heavydestroyer_basilisk_cluster'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='scaleplate_plunderer_heavydestroyer_basilisk_cluster'][@name='{20204,4201}']/environment/@gate"/> -->
+	<!-- <replace sel="/jobs/job[@id='scaleplate_plunderer_hatram_cluster'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='scaleplate_plunderer_hatram_cluster'][@name='{20204,4201}']/environment/@gate"/> -->
+
+	<!-- <replace sel="/jobs/job[@id='scaleplate_plunderer_heavyfrigate_manticore_cluster'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='scaleplate_plunderer_heavyfrigate_manticore_cluster'][@name='{20204,4201}']/environment/@gate"/> -->
+	<!-- <replace sel="/jobs/job[@id='scaleplate_plunderer_sokrota_plunderer_cluster'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='scaleplate_plunderer_sokrota_plunderer_cluster'][@name='{20204,4201}']/environment/@gate"/> -->
+	
+	<!-- <replace sel="/jobs/job[@id='yaki_destroyer_patrol_l'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='yaki_destroyer_patrol_l'][@name='{20204,4201}']/environment/@gate"/> -->
+	<!-- <replace sel="/jobs/job[@id='yaki_raider_l'][@name='{20204,4201}']/environment/@buildatshipyard">true</replace> -->
+	<!-- <remove sel="/jobs/job[@id='yaki_raider_l'][@name='{20204,4201}']/environment/@gate"/> -->
+	
+
+	<!-- Hatikvah jobs to be removed and replaced by MFE -->
+	<remove sel="/jobs/job[@id='hatikvah_ship_construction_trader_minotaur_uni']"/>
+	<remove sel="/jobs/job[@id='hatikvah_free_miner_xl_solid_hatram_miner']"/>
+	<remove sel="/jobs/job[@id='hatikvah_ship_construction_trader_ore_xl_trader']"/>
+	<remove sel="/jobs/job[@id='hatikvah_ship_construction_trader_xl_trader']"/>
+
+
+	<!-- Scaleplate jobs to be removed and replaced by MFE -->
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_baku_cluster']"/>
+	<remove sel="/jobs/job[@id='scaleplate_smuggler_baku']"/>
+	
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_heavydestroyer_basilisk_cluster']"/>
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_heavyfrigate_manticore_cluster']"/>
+	
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_sokrota_plunderer_cluster']"/>
+	<remove sel="/jobs/job[@id='scaleplate_plunderer_hatram_cluster']"/>
+	
+	<!-- Yaki jobs to be removed and replaced by MFE -->
+	<remove sel="/jobs/job[@id='yaki_blockaderunner_smuggler_m']"/>
+	<remove sel="/jobs/job[@id='yaki_destroyer_patrol_l']"/>
+	<remove sel="/jobs/job[@id='yaki_raider_l']"/>
+	<remove sel="/jobs/job[@id='yaki_scout_s']"/>
+	
+	
+	
+	
+	
+	<add sel="/jobs/job[@id='scaleplate_staticdefense_engineer_m']/orders/order">
+		<param name="usecover" value="true"/>
+	</add>
+	
+	<add sel="/jobs/job[@id='scaleplate_staticdefense_minelayer_s']/orders/order">
+		<param name="usecover" value="true"/>
+	</add>	
+	
+	
+	<!-- ############################################################################################################################## -->
+	<!-- MFE Jobs edited for SVE and Vanilla -->
+	
+	<add sel="/jobs">
+	
+		<!-- Hatikvah Blockaderunner --><!-- added from SVE -->
+		<job id="hatikvah_ship_construction_trader_m" name="{20204,401}">
+			<modifiers rebuild="false" commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+				</order>
+			</orders>
+			<basket basket="construction_ships"/>
+			<category faction="hatikvah" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+			<quota galaxy="2" sector="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="[friend, ally]" comparison="ge" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[blockaderunner, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0.4" max="1"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+		</job>
+	
+		<!-- Hatikvah M Station Trader --><!-- Leave it as is -->
+		<job id="hatikvah_stationtrader_m" name="{20204,801}">
+			<modifiers rebuild="false" commandeerable="false"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="maxbuy" value="5"/>
+				</order>
+			</orders>
+			<basket basket="all_container"/>
+			<category faction="hatikvah" tags="[stationtrader]" size="ship_m"/>
+			<quota galaxy="0" maxgalaxy="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="member" comparison="ge" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[blockaderunner, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="0.6"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+		</job>
+		
+		<!-- Hatikvah M Energy Trader --><!-- Leave it as is -->
+		<job id="hatikvah_energycell_trader_m" name="{20204,201}">
+			<modifiers rebuild="false" commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+				</order>
+			</orders>
+			<basket basket="energycells"/>
+			<category faction="hatikvah" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+			<quota galaxy="1" maxgalaxy="3"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="member" comparison="ge" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[blockaderunner, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="1"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+		</job>
+		
+		
+		<!-- Hatikvah XL Hatram Miner --><!-- <remove sel="//jobs/job[@id='hatikvah_free_miner_xl_solid_hatram_miner']"/> -->
+		<job id="hatikvah_free_miner_xl" name="{20204,5601}" comment="very few">
+			<orders>
+				<order order="MiningRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+				</order>
+			</orders>
+			<category faction="hatikvah" tags="[freighter, miner, deepspace]" size="ship_xl"/>
+			<quota galaxy="3"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="friend" comparison="ge" regionbasket="minerals" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="minerals"/>
+			<encounters id="mining_group_large"/>
+			<ship>
+				<select faction="hatikvah" tags="[xlminer, mfe, solid]" size="ship_xl"/>
+				<loadout>
+					<level min="0.6" max="1"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+			<cargo>
+				<wares>
+					<fillpercent min="0" max="100" profile="inversebell"/>
+				</wares>
+			</cargo>
+		</job>
+		
+		
+		<!-- Hatikvah XL Metal Trader --><!-- <remove sel="//jobs/job[@id='hatikvah_ship_construction_trader_ore_xl_trader']"/> -->
+		<job id="hatikvah_trader_xl_mineral" name="{20204,501}">
+			<modifiers rebuild="true" commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+				</order>
+			</orders>
+			<basket basket="refined_mineral"/>
+			<category faction="hatikvah" tags="[factionlogic, freighter, trader]" size="ship_xl"/>
+			<quota galaxy="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="member" comparison="ge" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[xltrader, mfe, container]" size="ship_xl"/>
+				<loadout>
+					<level min="0.2" max="1"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+		</job>
+		
+		
+		<!-- Hatikvah XL Construction Trader --><!-- <remove sel="//jobs/job[@id='hatikvah_ship_construction_trader_xl_trader']"/> -->
+		<job id="hatikvah_trader_xl_construction" name="{20204,401}">
+			<modifiers rebuild="true" commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+				</order>
+			</orders>
+			<basket basket="construction_stations"/>
+			<category faction="hatikvah" tags="[factionlogic, freighter, trader]" size="ship_xl"/>
+			<quota galaxy="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="member" comparison="ge" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[xltrader, mfe, container]" size="ship_xl"/>
+				<loadout>
+					<level min="0.3" max="1"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+		</job>
+	
+		<!-- Hatikvah M Water Trader -->
+		<!-- Leave it as is -->
+		<job id="hatikvah_water_trader_m" name="{20204,1601}">
+			<modifiers rebuild="false" commandeerable="true"/>
+			<orders>
+				<order order="Middleman" default="true">
+					<param name="range" value="5"/>
+				</order>
+			</orders>
+			<basket basket="water"/>
+			<category faction="hatikvah" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+			<quota galaxy="3" cluster="2" sector="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="member" comparison="ge" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[blockaderunner, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="0.9"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Hatikvah M Liquid Miner --><!-- Leave it as is -->
+		<job id="hatikvah_free_miner_m_liquid" name="{20204,5701}">
+			<modifiers rebuild="false" commandeerable="true"/>
+			<orders>
+				<order order="MiningRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+				</order>
+			</orders>
+			<basket basket="gases"/>
+			<category faction="hatikvah" tags="[factionlogic, freighter, miner]" size="ship_m"/>
+			<quota galaxy="3"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="member" comparison="ge" regionbasket="gases" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[miner, liquid]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="0.7"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+				<cargo>
+					<wares>
+						<fillpercent min="0" max="100" profile="inversebell"/>
+					</wares>
+				</cargo>
+			</ship>
+		</job>
+
+		<!-- Hatikvah M Mineral Miner --><!-- Leave it as is -->
+		<job id="hatikvah_free_miner_m_mineral" name="{20204,5601}">
+			<modifiers rebuild="false" commandeerable="true"/>
+			<orders>
+				<order order="MiningRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+				</order>
+			</orders>
+			<basket basket="minerals"/>
+			<category faction="hatikvah" tags="[factionlogic, freighter, miner]" size="ship_m"/>
+			<quota galaxy="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="member" comparison="ge" regionbasket="minerals" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[miner, solid]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="1"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+				<cargo>
+					<wares>
+						<fillpercent min="0" max="100" profile="inversebell"/>
+					</wares>
+				</cargo>
+			</ship>
+		</job>
+		
+		<!-- Hatikvah Heavy Frigate Patrol -->
+		<job id="hatikvah_heavyfrigate_patrol_l" name="{20204,5201}" comment="each sector">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.cluster"/>
+				</order>
+			</orders>
+			<category faction="hatikvah" tags="[factionlogic, military, frigate, destroyer]" size="ship_l"/>
+			<quota galaxy="1" maxgalaxy="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="hatikvah" relation="self" comparison="exact" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="hatikvah" tags="[military, heavyfrigate, mfe]" size="ship_l"/>
+				<loadout>
+					<level min="0.6" max="1.0"/>
+				</loadout>
+				<owner exact="hatikvah" overridenpc="true"/>
+			</ship>
+		</job>
+
+	</add>
+
+	<!-- ################################################# -->
+	<!--                      Scaleplate                   -->
+	<!-- ################################################# -->
+
+	<add sel="/jobs">
+
+		<!-- Scaleplate M Smuggler | MFE --><!-- DONE -->
+		<job id="scaleplate_smuggler_m" name="{20204,10009}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="maxbuy" value="30"/>
+					<param name="maxsell" value="30"/>
+					<param name="usecover" value="true"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[trader]" size="ship_m"/>
+			<quota galaxy="8" sector="1"/><!-- <quota galaxy="15"/> -->
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="global_illegal"/>
+			<ship>
+				<select faction="scaleplate" tags="[blockaderunner, smuggler, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+	</add>
+
+	<!-- Scaleplate Blockaderunner Plunderer | SVE  --><!-- remove SVE job, add Baku and Minotaur to vanilla ships and increase the quota a bit --><!-- DONE -->
+	<replace sel="/jobs/job[@id='scaleplate_plunderer_m_cluster']/quota/@galaxy">16</replace>
+	<!--	<!{1}** Scaleplate Blockaderunner Plunderer | SVE **{1}>
+	<job id="scaleplate_plunderer_baku_cluster" name="{20204,4301}">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Plunder" default="true">
+				<param name="range_internal" value="'cluster'"/>
+				<param name="plundermode" value="1"/>
+			</order>
+		</orders>
+		<category faction="scaleplate" tags="[medium, plunderer]" size="ship_m"/>
+		<quota galaxy="8" sector="1"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<basket basket="pirate_container"/>
+		<ship>
+			<select faction="scaleplate" tags="[blockaderunner]" size="ship_m"/>
+			<loadout>
+				<level min="0.3" max="1.0"/>
+			</loadout>
+			<owner exact="scaleplate" overridenpc="true"/>
+		</ship>
+	</job>-->
+
+	<!-- Scaleplate S Smuggler | MFE --><!-- DONE -->
+	<!-- Duplicate with vanilla job, edit the vanilla to add up the MFE numbers -->
+	<replace sel="//job[@id='scaleplate_smuggler_s']/quota/@galaxy">38</replace>
+	<!-- <add sel="//job[@id='scaleplate_smuggler_s']/location" type="@matchextension">false</add> --><!-- added by More AI Economy/Jobs Shuffle -->
+	<!-- 		<job id="sca_smuggler_s" name="{20204,10009}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="maxbuy" value="30"/>
+					<param name="maxsell" value="30"/>
+					<param name="usecover" value="true"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[trader]" size="ship_s"/>
+			<quota galaxy="8" sector="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="global_illegal"/>
+			<ship>
+				<select faction="scaleplate" tags="[trader]" size="ship_s"/>
+				<loadout>
+					<level min="0" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job> -->
+		
+	<!-- Scaleplate M Smuggler MFE --><!-- remove redundant job from SVE -->
+	<!-- <remove sel="//jobs/job[@id='scaleplate_smuggler_baku']"/> -->
+	
+	<add sel="/jobs">
+
+		<!-- Scaleplate M Equipment Trader -->
+		<job id="sca_equipment_trader_m" name="{20204,401}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Middleman" default="true">
+					<param name="range" value="5"/>
+					<param name="usecover" value="true"/>
+				</order>
+			</orders>
+			<basket basket="equipment"/>
+			<category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+			<quota galaxy="3" cluster="3" sector="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="scaleplate" tags="[blockaderunner, smuggler, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Scaleplate M Ship Construction Trader -->
+		<job id="sca_ship_construction_trader_m" name="{20204,401}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+					<param name="usecover" value="true"/>
+				</order>
+			</orders>
+			<basket basket="construction_ships"/>
+			<category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+			<quota galaxy="4"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="scaleplate" tags="[blockaderunner, smuggler, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Scaleplate M Energy Trader -->
+		<job id="sca_energycell_trader_m" name="{20204,201}">
+			<modifiers rebuild="false" commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="minbuy" value="0"/>
+					<param name="maxbuy" value="5"/>
+					<param name="minsell" value="0"/>
+					<param name="maxsell" value="5"/>
+					<param name="usecover" value="true"/>
+				</order>
+			</orders>
+			<basket basket="energycells"/>
+			<category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+			<quota galaxy="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="scaleplate" tags="[blockaderunner, smuggler, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Scaleplate XL Patrol --><!-- DONE -->
+		<job id="sca_station_patrol" name="{20204,4301}" comment="nothing to see here">
+			<modifiers commandeerable="false"/>
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.zone"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[military, carrier]" size="ship_xl"/>
+			<quota galaxy="1"/>
+			<location class="zone" macro="Zone002_Cluster_04_Sector001_macro" faction="xenon" relation="self" comparison="exact" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="scaleplate" tags="[sokrotaplunderer, xlpatrol]" size="ship_xl"/>
+				<loadout>
+					<level exact="1.0"/>
+					<variation exact="0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+			<subordinates>
+				<subordinate job="sca_destroyer_escort_l"/>
+				<subordinate job="sca_gunship_escort_m"/>
+				<subordinate job="scaleplate_fighter_escort_s"/>
+			</subordinates>
+		</job>
+
+		<!-- Scaleplate Gunship Escort --><!-- DONE -->
+		<job id="sca_gunship_escort_m" name="{20204,4301}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.dartvertical"/>
+					<param name="formationparam" value="2500m"/>
+					<param name="overrideformationskill" value="true"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[military]" size="ship_m"/>
+			<quota wing="3"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro"/>
+			<environment buildatshipyard="true"/>
+			<modifiers subordinate="true"/>
+			<ship>
+				<select faction="scaleplate" tags="[gunship, mfe]" size="ship_m"/>
+				<loadout>
+					<level min="0.5" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Scaleplate Destroyer Escort --><!-- DONE -->
+		<job id="sca_destroyer_escort_l" name="{20204,4301}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.invvshape"/>
+					<param name="overrideformationskill" value="true"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[military, destroyer]" size="ship_l"/>
+			<quota wing="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro"/>
+			<environment buildatshipyard="true"/>
+			<modifiers subordinate="true"/>
+			<ship>
+				<select faction="scaleplate" tags="[lescort, mfe]" size="ship_l"/>
+				<loadout>
+					<level min="0.5" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+			<subordinates>
+				<subordinate job="scaleplate_fighter_escort_s"/>
+			</subordinates>
+		</job>
+
+	</add>
+
+
+	<!-- lower the amount of destroyers and increase the amount of heavyfrigates -->
+	<replace sel="/jobs/job[@id='scaleplate_plunderer_l_cluster']/quota/@galaxy">7</replace>
+
+	<add sel="/jobs">
+
+		<!-- Scaleplate Extra Plunderers | MFE --><!-- Duplicate with SVE, remove SVE, change quota, integrate job switch -->
+		<job id="scaleplate_plunderer_l_cluster_extra" name="{20204,4101}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'"/>
+					<param name="plundermode" value="1"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
+			<quota galaxy="14" sector="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="pirate_container"/>
+			<ship>
+				<select faction="scaleplate" tags="[lescort, mfe]" size="ship_l"/>
+				<loadout>
+					<level min="0.5" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Scaleplate Extra Plunderers Reduced --><!-- additional job, integrated job switch -->
+		<job id="scaleplate_plunderer_l_cluster_extra_reduced" name="{20204,4101}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'"/>
+					<param name="plundermode" value="1"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
+			<quota galaxy="2" sector="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="pirate_container"/>
+			<ship>
+				<select faction="scaleplate" tags="[lescort, mfe]" size="ship_l"/>
+				<loadout>
+					<level min="0.5" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Scaleplate Heavy Destroyer Plunderer Patrol -->
+		<job id="remix_scaleplate_plunderer_heavydestroyer_cluster" name="{20204,4101}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'"/>
+					<param name="plundermode" value="1"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[plunderer, destroyer]" size="ship_l"/>
+			<quota galaxy="1"/>
+			<time start="3600" interval="3600"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="pirate_container"/>
+			<ship>
+				<select faction="scaleplate" tags="[military, heavydestroyer, plunderer]" size="ship_l"/>
+				<loadout>
+					<level min="0.8" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Scaleplate XL Hatram Plunderer Patrol -->
+		<job id="remix_scaleplate_plunderer_xl_cluster_hatram" name="{20204,4201}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'"/>
+					<param name="plundermode" value="1"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[plunderer]" size="ship_xl"/>
+			<quota galaxy="1" sector="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="pirate_container"/>
+			<ship>
+				<select faction="scaleplate" tags="[xlplunderer]" size="ship_xl"/>
+				<loadout>
+					<level min="0.9" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+		
+		<!-- Scaleplate XL Sokrota Plunderer Patrol -->
+		<job id="remix_scaleplate_plunderer_xl_cluster_sokrota" name="{20204,4201}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'"/>
+					<param name="plundermode" value="1"/>
+				</order>
+			</orders>
+			<category faction="scaleplate" tags="[plunderer]" size="ship_xl"/>
+			<quota galaxy="1" sector="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="pirate_container"/>
+			<ship>
+				<select faction="scaleplate" tags="[sokrotaplunderer, xlplunderer]" size="ship_xl"/>
+				<loadout>
+					<level min="0.8" max="1.0"/>
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true"/>
+			</ship>
+		</job>
+
+	</add>
+
+	<!-- ################################################# -->
+	<!--                      Alliance                   -->
+	<!-- ################################################# -->
+		
+	
+	<add sel="/jobs">
+
+		<!-- Alliance Scout S -->
+		<job id="mfe_ali_explorer_s" name="{20204,7101}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Recon" default="true"/>
+			</orders>
+			<category faction="alliance" tags="[factionlogic, military, scout]" size="ship_s"/>
+			<quota galaxy="8" maxgalaxy="15" cluster="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="alliance" tags="[allianceexplorer, mfe]" size="ship_s"/>
+				<loadout>
+					<level min="0.7" max="1.0"/>
+				</loadout>
+				<owner exact="alliance" overridenpc="true"/>
+			</ship>
+		</job>
+
+		<!-- Alliance Explorer XL -->
+		<job id="mfe_ali_explorer_xl" name="{20204,10025}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Recon" default="true"/>
+			</orders>
+			<category faction="alliance" tags="[factionlogic, military, scout]" size="ship_xl"/>
+			<quota galaxy="1" cluster="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="alliance" tags="[allianceexplorer, mfe]" size="ship_xl"/>
+				<loadout>
+					<level min="0.7" max="1.0"/>
+				</loadout>
+				<owner exact="alliance" overridenpc="true"/>
+			</ship>
+		</job>
+
+	</add>
+	
+	<!-- ################################################# -->
+	<!--                      Yaki                   -->
+	<!-- ################################################# -->
+
+	<!-- <add sel="/jobs"> -->
+
+		<!-- Yaki Blockaderunner Smuggler -->
+		<!-- Duplicate with Yaki Evolution, removed -->
+		<!--<job id="mfe_yaki_blockaderunner_smuggler_m" name="{20204,10009}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="maxbuy" value="30"/>
+					<param name="maxsell" value="30"/>
+					<param name="usecover" value="true"/>
+				</order>
+			</orders>
+			<category faction="yaki" tags="[factionlogic, trader]" size="ship_m"/>
+			<quota galaxy="5" maxgalaxy="8" cluster="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" factionrace="xenon" negatefactionrace="true" faction="yaki" relation="neutral" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="construction_ships"/>
+			<ship>
+				<select faction="yaki" tags="[medium, yakiblockaderunner]" size="ship_m"/>
+				<loadout>
+					<level min="0" max="1.0"/>
+				</loadout>
+				<owner exact="yaki" overridenpc="true"/>
+			</ship>
+		</job> -->
+		
+		<!-- Yaki Scout --><!-- Duplicate with Yaki Evolution, removed -->
+		<!--<job id="mfe_yaki_scout_s" name="{20204,2801}" comment="each border sector * 2">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Recon" default="true"/>
+			</orders>
+			<category faction="yaki" tags="[factionlogic, scout]" size="ship_s"/>
+			<quota galaxy="5" maxgalaxy="7" cluster="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" factionrace="xenon" negatefactionrace="true" faction="yaki" relation="neutral" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="yaki" tags="[yakiscout]" size="ship_s"/>
+				<loadout>
+					<level min="0.2" max="1.0"/>
+				</loadout>
+				<owner exact="yaki" overridenpc="true"/>
+			</ship>
+		</job> -->
+
+		
+		<!-- Yaki Destroyer Raider --><!-- Duplicate with Yaki Evolution, removed -->
+		<!--<job id="mfe_yaki_raider_l" name="{20204,3401}">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'"/>
+					<param name="plundermode" value="1"/>
+				</order>
+			</orders>
+			<category faction="yaki" tags="[factionlogic, military]" size="ship_l"/>
+			<quota galaxy="2"/>
+			<time start="3600" interval="60"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" factionrace="xenon" negatefactionrace="true" faction="yaki" relation="neutral" comparison="lt" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<basket basket="construction_ships"/>
+			<ship>
+				<select faction="yaki" tags="[military, yakidestroyer]" size="ship_l"/>
+				<loadout>
+					<level min="0.5" max="1.0"/>
+				</loadout>
+				<owner exact="yaki" overridenpc="true"/>
+			</ship>
+			<subordinates>
+				<subordinate job="yaki_fighter_escort_mixed"/>
+			</subordinates>
+		</job> -->
+
+	<!-- </add> -->
+
+</diff>

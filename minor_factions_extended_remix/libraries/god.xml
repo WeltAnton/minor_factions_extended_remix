@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+		<!-- Hatikvah wharf -->
+<!-- 		<station id="wharf_hatikvah" race="argon" owner="hatikvah" type="factory">
+			<quotas>
+				<quota galaxy="1" zone="1" />
+			</quotas>
+			<location class="zone" macro="Zone004_Cluster_29_Sector001_macro" matchextension="false" >
+				<corerange max="0.5"/>
+			</location>
+			<station>
+				<select faction="hatikvah" tags="[wharf]" />
+				<loadout>
+					<level exact="0.7" />
+				</loadout>
+			</station>
+		</station> -->
+
+	<add sel="//god/stations">
+
+		<!-- Hatikvah wharf -->
+		<station id="wharf_hatikvah" race="argon" owner="hatikvah" type="factory">
+			<quotas>
+				<quota galaxy="1" zone="1" />
+			</quotas>
+			<location class="zone" macro="Zone003_Cluster_29_Sector001_macro" matchextension="false" >
+				<corerange max="0.5"/>
+			</location>
+			<station>
+				<select faction="hatikvah" tags="[wharf]" />
+				<loadout>
+					<level exact="0.7" />
+				</loadout>
+			</station>
+		</station>
+		
+		<!-- Hatikvah shipyard -->
+		<station id="shipyard_hatikvah" race="argon" owner="hatikvah" type="factory">
+			<quotas>
+				<quota galaxy="1" zone="1" />
+			</quotas>
+			<location class="zone" macro="Zone003_Cluster_29_Sector002_macro" matchextension="false" />
+			<station>
+				<select faction="hatikvah" tags="[shipyard]" />
+				<loadout>
+					<level exact="0.8" />
+				</loadout>
+			</station>
+		</station>
+
+		<!-- Scaleplate shipyard 1 - minor_faction_extended -->
+		<station id="shipyard_scaleplate_01" race="teladi" owner="scaleplate" type="factory">
+			<quotas>
+				<quota galaxy="1" zone="1" />
+			</quotas>
+			<location class="sector" macro="Cluster_04_Sector001_macro" matchextension="false">
+				<corerange min="1.2" max="1.4"/>
+			</location>
+			<station>
+				<select faction="scaleplate" tags="[shipyard]" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+			</station>
+		</station>
+
+		<!-- Scaleplate shipyard 2 - spawn_be_gone -->
+    <station id="shipyard_scaleplate_01_AB" race="teladi" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="1" sector="1" />
+      </quotas>
+      <location class="sector" macro="Cluster_42_Sector002_macro" matchextension="false"/>
+      <station>
+        <select faction="scaleplate" tags="[shipyard]" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+      </station>
+    </station>
+		<!-- Scaleplate wharf 1 - minor_faction_extended -->
+		<station id="wharf_scaleplate_0" race="teladi" owner="scaleplate" type="factory">
+			<quotas>
+				<quota galaxy="1" zone="1" />
+			</quotas>
+			<location class="sector" macro="Cluster_42_Sector002_macro" matchextension="false">
+				<corerange min="1.2" max="1.4"/>
+			</location>
+			<station>
+				<select faction="scaleplate" tags="[wharf]" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+			</station>
+		</station>
+
+		<!-- Scaleplate wharf 2 - minor_faction_extended -->
+		<station id="wharf_scaleplate_1" race="teladi" owner="scaleplate" type="factory">
+			<quotas>
+				<quota galaxy="1" zone="1" />
+			</quotas>
+			<location class="sector" macro="Cluster_45_Sector001_macro" matchextension="false">
+				<corerange min="1.2" max="1.4"/>
+			</location>
+			<station>
+				<select faction="scaleplate" tags="[wharf]" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+			</station>
+		</station>
+
+		<!-- Yaki wharf - minor_faction_extended -->
+		<station id="station_yaki_0" race="argon" owner="yaki" type="yakistation">
+			<quotas>
+				<quota galaxy="1" zone="1" />
+			</quotas>
+			<location class="sector" macro="Cluster_26_Sector002_macro" matchextension="false">
+				<corerange min="1.2" max="1.4"/>
+			</location>
+			<station>
+				<select faction="yaki" tags="[wharf]" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+			</station>
+		</station>
+	</add>
+</diff>
