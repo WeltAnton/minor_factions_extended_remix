@@ -83,7 +83,7 @@
 	<remove sel="/jobs/job[@id='hatikvah_ship_construction_trader_xl_trader']"/>
 
 
-	<!-- Scaleplate jobs to be removed and replaced by MFE -->
+	<!-- Scaleplate jobs to be removed from SVE and replaced by MFE -->
 	<remove sel="/jobs/job[@id='scaleplate_plunderer_baku_cluster']"/>
 	<remove sel="/jobs/job[@id='scaleplate_smuggler_baku']"/>
 	
@@ -93,7 +93,7 @@
 	<remove sel="/jobs/job[@id='scaleplate_plunderer_sokrota_plunderer_cluster']"/>
 	<remove sel="/jobs/job[@id='scaleplate_plunderer_hatram_cluster']"/>
 	
-	<!-- Yaki jobs to be removed and replaced by MFE -->
+	<!-- Yaki jobs to be removed from SVE and replaced by MFE -->
 	<remove sel="/jobs/job[@id='yaki_blockaderunner_smuggler_m']"/>
 	<remove sel="/jobs/job[@id='yaki_destroyer_patrol_l']"/>
 	<remove sel="/jobs/job[@id='yaki_raider_l']"/>
@@ -871,3 +871,4 @@
 
 
 </diff>
+
