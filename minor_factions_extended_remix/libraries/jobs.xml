@@ -76,7 +76,7 @@
 	<!-- <remove sel="/jobs/job[@id='yaki_raider_l'][@name='{20204,4201}']/environment/@gate"/> -->
 	
 
-	<!-- Hatikvah jobs to be removed and replaced by MFE -->
+	<!-- Hatikvah jobs to be removed from SVE and replaced by MFE -->
 	<remove sel="/jobs/job[@id='hatikvah_ship_construction_trader_minotaur_uni']"/>
 	<remove sel="/jobs/job[@id='hatikvah_free_miner_xl_solid_hatram_miner']"/>
 	<remove sel="/jobs/job[@id='hatikvah_ship_construction_trader_ore_xl_trader']"/>
@@ -868,5 +868,6 @@
 		</job> -->
 
 	<!-- </add> -->
+
 
 </diff>
